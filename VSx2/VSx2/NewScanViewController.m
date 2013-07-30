@@ -17,8 +17,9 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
+    if (self)
+	{
+	  
     }
     return self;
 }
@@ -28,6 +29,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+	
+	dpCounter = 0;
+	dataPoints = [[NSMutableArray alloc] initWithCapacity:1000];
 	
     ble = [[BLE alloc] init];
     [ble controlSetup:1];
@@ -54,6 +58,12 @@
 	for (int i=0; i<length; i+=3)
 	  {
 		UInt16 Value = data[i+2] | data[i+1] << 8;
+		
+		if(dpCounter++ < 1000)
+		  {
+			[dataPoints addObject:[NSNumber numberWithUnsignedShort:Value]];
+			NSLog(@"%i",dpCounter);
+		  }
 		
 		if (data[i] == 0x00)
 			sensorOneLevelBar.progress = ((float)Value/1000.0);

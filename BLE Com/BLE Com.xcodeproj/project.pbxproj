@@ -22,7 +22,7 @@
 		93A330C4179CD152005B50F9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93A330C2179CD152005B50F9 /* InfoPlist.strings */; };
 		93A330C6179CD152005B50F9 /* BLE_ComTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A330C5179CD152005B50F9 /* BLE_ComTests.m */; };
 		93A330D0179CD18A005B50F9 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93A330CF179CD18A005B50F9 /* CoreBluetooth.framework */; };
-		93A3311D179D6889005B50F9 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93A330D3179CD1A5005B50F9 /* BLE.m */; };
+		93E7C85817A76C18002BF332 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E7C85517A76C05002BF332 /* BLE.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,9 +56,9 @@
 		93A330C3179CD152005B50F9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93A330C5179CD152005B50F9 /* BLE_ComTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE_ComTests.m; sourceTree = "<group>"; };
 		93A330CF179CD18A005B50F9 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		93A330D2179CD1A5005B50F9 /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
-		93A330D3179CD1A5005B50F9 /* BLE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
-		93A330D4179CD1A5005B50F9 /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
+		93E7C85417A76C05002BF332 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		93E7C85517A76C05002BF332 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		93E7C85617A76C05002BF332 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +89,7 @@
 		93A3308E179CD152005B50F9 = {
 			isa = PBXGroup;
 			children = (
+				93E7C85317A76C05002BF332 /* BLE_Framework */,
 				93A330A0179CD152005B50F9 /* BLE Com */,
 				93A330BF179CD152005B50F9 /* BLE ComTests */,
 				93A33099179CD152005B50F9 /* Frameworks */,
@@ -108,7 +109,6 @@
 		93A33099179CD152005B50F9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				93A330D1179CD1A5005B50F9 /* BLE_Framework */,
 				93A330CF179CD18A005B50F9 /* CoreBluetooth.framework */,
 				93A3309A179CD152005B50F9 /* Foundation.framework */,
 				93A3309C179CD152005B50F9 /* CoreGraphics.framework */,
@@ -161,15 +161,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		93A330D1179CD1A5005B50F9 /* BLE_Framework */ = {
+		93E7C85317A76C05002BF332 /* BLE_Framework */ = {
 			isa = PBXGroup;
 			children = (
-				93A330D2179CD1A5005B50F9 /* BLE.h */,
-				93A330D3179CD1A5005B50F9 /* BLE.m */,
-				93A330D4179CD1A5005B50F9 /* BLEDefines.h */,
+				93E7C85417A76C05002BF332 /* BLE.h */,
+				93E7C85517A76C05002BF332 /* BLE.m */,
+				93E7C85617A76C05002BF332 /* BLEDefines.h */,
 			);
-			name = BLE_Framework;
-			path = ../../Developer/BLEShield_SDK_b0.4.2/BLE_Framework;
+			path = BLE_Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,7 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93A3311D179D6889005B50F9 /* BLE.m in Sources */,
+				93E7C85817A76C18002BF332 /* BLE.m in Sources */,
 				93A330B1179CD152005B50F9 /* ViewController.m in Sources */,
 				93A330AB179CD152005B50F9 /* AppDelegate.m in Sources */,
 				93A330A7179CD152005B50F9 /* main.m in Sources */,

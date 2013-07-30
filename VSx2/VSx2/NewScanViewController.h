@@ -18,9 +18,14 @@
 	IBOutlet UIProgressView *sensorThreeLevelBar;
 	
 	IBOutlet UIButton *bleConnect;
+	
+	NSMutableArray *dataPoints;
+	int dpCounter;
 }
 
 - (IBAction)connectBLE:(id)sender;
+
+- (void)graphData:(NSArray*)dataArray;
 
 @property (strong, nonatomic) BLE *ble;
 
