@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		930830D617A746C700305036 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 930830D317A746A200305036 /* BLE.m */; };
 		93562D7117A371F8000E0556 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93562D7017A371F8000E0556 /* Foundation.framework */; };
 		93562D7317A371F8000E0556 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93562D7217A371F8000E0556 /* CoreGraphics.framework */; };
 		93562D7517A371F8000E0556 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 93562D7417A371F8000E0556 /* UIKit.framework */; };
@@ -23,7 +24,6 @@
 		93562DA817A377B7000E0556 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93562DA717A377B7000E0556 /* Main.storyboard */; };
 		936D91B717A40EBC00AF8129 /* NewScanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936D91B617A40EBC00AF8129 /* NewScanViewController.m */; };
 		936D91B917A40F7500AF8129 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936D91B817A40F7500AF8129 /* CoreBluetooth.framework */; };
-		936D91BE17A40F9800AF8129 /* BLE.m in Sources */ = {isa = PBXBuildFile; fileRef = 936D91BC17A40F8300AF8129 /* BLE.m */; };
 		93876B0B17A3FE45009A7368 /* newscan.png in Resources */ = {isa = PBXBuildFile; fileRef = 93876B0A17A3FE45009A7368 /* newscan.png */; };
 		93876B0D17A400D7009A7368 /* options.png in Resources */ = {isa = PBXBuildFile; fileRef = 93876B0C17A400D7009A7368 /* options.png */; };
 		93876B0F17A40193009A7368 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 93876B0E17A40193009A7368 /* about.png */; };
@@ -44,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		930830D217A746A200305036 /* BLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
+		930830D317A746A200305036 /* BLE.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
+		930830D417A746A200305036 /* BLEDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		93562D6D17A371F8000E0556 /* VSx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93562D7017A371F8000E0556 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		93562D7217A371F8000E0556 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,9 +69,6 @@
 		936D91B517A40EBC00AF8129 /* NewScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScanViewController.h; sourceTree = "<group>"; };
 		936D91B617A40EBC00AF8129 /* NewScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewScanViewController.m; sourceTree = "<group>"; };
 		936D91B817A40F7500AF8129 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		936D91BB17A40F8300AF8129 /* BLE.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLE.h; sourceTree = "<group>"; };
-		936D91BC17A40F8300AF8129 /* BLE.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLE.m; sourceTree = "<group>"; };
-		936D91BD17A40F8300AF8129 /* BLEDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEDefines.h; sourceTree = "<group>"; };
 		93876B0A17A3FE45009A7368 /* newscan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = newscan.png; sourceTree = "<group>"; };
 		93876B0C17A400D7009A7368 /* options.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = options.png; sourceTree = "<group>"; };
 		93876B0E17A40193009A7368 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
@@ -103,9 +103,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		930830D117A746A200305036 /* BLE_Framework */ = {
+			isa = PBXGroup;
+			children = (
+				930830D217A746A200305036 /* BLE.h */,
+				930830D317A746A200305036 /* BLE.m */,
+				930830D417A746A200305036 /* BLEDefines.h */,
+			);
+			path = BLE_Framework;
+			sourceTree = "<group>";
+		};
 		93562D6417A371F8000E0556 = {
 			isa = PBXGroup;
 			children = (
+				930830D117A746A200305036 /* BLE_Framework */,
 				936D91B317A40E7E00AF8129 /* Graphics */,
 				936D91B417A40E8600AF8129 /* Views */,
 				93562D7617A371F8000E0556 /* VSx2 */,
@@ -127,7 +138,6 @@
 		93562D6F17A371F8000E0556 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				936D91BA17A40F8300AF8129 /* BLE_Framework */,
 				936D91B817A40F7500AF8129 /* CoreBluetooth.framework */,
 				93562D7017A371F8000E0556 /* Foundation.framework */,
 				93562D7217A371F8000E0556 /* CoreGraphics.framework */,
@@ -203,17 +213,6 @@
 			);
 			name = Views;
 			path = VSx2;
-			sourceTree = "<group>";
-		};
-		936D91BA17A40F8300AF8129 /* BLE_Framework */ = {
-			isa = PBXGroup;
-			children = (
-				936D91BB17A40F8300AF8129 /* BLE.h */,
-				936D91BC17A40F8300AF8129 /* BLE.m */,
-				936D91BD17A40F8300AF8129 /* BLEDefines.h */,
-			);
-			name = BLE_Framework;
-			path = ../../Developer/BLEShield_SDK_b0.4.2/BLE_Framework;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,7 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				936D91BE17A40F9800AF8129 /* BLE.m in Sources */,
+				930830D617A746C700305036 /* BLE.m in Sources */,
 				936D91B717A40EBC00AF8129 /* NewScanViewController.m in Sources */,
 				93562D7D17A371F8000E0556 /* main.m in Sources */,
 				93562D8717A371F8000E0556 /* VSx2ViewController.m in Sources */,
