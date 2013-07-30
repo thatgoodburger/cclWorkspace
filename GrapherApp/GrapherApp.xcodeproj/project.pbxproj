@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		932C4E0417A6B2AD009EF125 /* GPxPlotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 932C4E0317A6B2AD009EF125 /* GPxPlotViewController.m */; };
+		936D91CC17A44C3500AF8129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936D91CB17A44C3500AF8129 /* Foundation.framework */; };
+		936D91CE17A44C3500AF8129 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936D91CD17A44C3500AF8129 /* CoreGraphics.framework */; };
+		936D91D017A44C3500AF8129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936D91CF17A44C3500AF8129 /* UIKit.framework */; };
+		936D91D617A44C3500AF8129 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 936D91D417A44C3500AF8129 /* InfoPlist.strings */; };
+		936D91D817A44C3500AF8129 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 936D91D717A44C3500AF8129 /* main.m */; };
+		936D91DC17A44C3500AF8129 /* GPxAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 936D91DB17A44C3500AF8129 /* GPxAppDelegate.m */; };
+		936D91DF17A44C3500AF8129 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 936D91DD17A44C3500AF8129 /* Main.storyboard */; };
+		936D91E217A44C3500AF8129 /* GPxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 936D91E117A44C3500AF8129 /* GPxViewController.m */; };
+		936D91E417A44C3500AF8129 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 936D91E317A44C3500AF8129 /* Images.xcassets */; };
+		936D91EB17A44C3500AF8129 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936D91EA17A44C3500AF8129 /* XCTest.framework */; };
+		936D91EC17A44C3500AF8129 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936D91CB17A44C3500AF8129 /* Foundation.framework */; };
+		936D91ED17A44C3500AF8129 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 936D91CF17A44C3500AF8129 /* UIKit.framework */; };
+		936D91F517A44C3500AF8129 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 936D91F317A44C3500AF8129 /* InfoPlist.strings */; };
+		936D91F717A44C3500AF8129 /* GrapherAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 936D91F617A44C3500AF8129 /* GrapherAppTests.m */; };
+		936D920217A44E6600AF8129 /* GSxPlot.m in Sources */ = {isa = PBXBuildFile; fileRef = 936D920117A44E6600AF8129 /* GSxPlot.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		936D91EE17A44C3500AF8129 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 936D91C017A44C3500AF8129 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 936D91C717A44C3500AF8129;
+			remoteInfo = GrapherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		932C4E0217A6B2AD009EF125 /* GPxPlotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPxPlotViewController.h; sourceTree = "<group>"; };
+		932C4E0317A6B2AD009EF125 /* GPxPlotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPxPlotViewController.m; sourceTree = "<group>"; };
+		936D91C817A44C3500AF8129 /* GrapherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GrapherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		936D91CB17A44C3500AF8129 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		936D91CD17A44C3500AF8129 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		936D91CF17A44C3500AF8129 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		936D91D317A44C3500AF8129 /* GrapherApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrapherApp-Info.plist"; sourceTree = "<group>"; };
+		936D91D517A44C3500AF8129 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		936D91D717A44C3500AF8129 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		936D91D917A44C3500AF8129 /* GrapherApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GrapherApp-Prefix.pch"; sourceTree = "<group>"; };
+		936D91DA17A44C3500AF8129 /* GPxAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPxAppDelegate.h; sourceTree = "<group>"; };
+		936D91DB17A44C3500AF8129 /* GPxAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPxAppDelegate.m; sourceTree = "<group>"; };
+		936D91DE17A44C3500AF8129 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		936D91E017A44C3500AF8129 /* GPxViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GPxViewController.h; sourceTree = "<group>"; };
+		936D91E117A44C3500AF8129 /* GPxViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPxViewController.m; sourceTree = "<group>"; };
+		936D91E317A44C3500AF8129 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		936D91E917A44C3500AF8129 /* GrapherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GrapherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		936D91EA17A44C3500AF8129 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		936D91F217A44C3500AF8129 /* GrapherAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GrapherAppTests-Info.plist"; sourceTree = "<group>"; };
+		936D91F417A44C3500AF8129 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		936D91F617A44C3500AF8129 /* GrapherAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GrapherAppTests.m; sourceTree = "<group>"; };
+		936D920017A44E6600AF8129 /* GSxPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSxPlot.h; sourceTree = "<group>"; };
+		936D920117A44E6600AF8129 /* GSxPlot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSxPlot.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		936D91C517A44C3500AF8129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936D91CE17A44C3500AF8129 /* CoreGraphics.framework in Frameworks */,
+				936D91D017A44C3500AF8129 /* UIKit.framework in Frameworks */,
+				936D91CC17A44C3500AF8129 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936D91E617A44C3500AF8129 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936D91EB17A44C3500AF8129 /* XCTest.framework in Frameworks */,
+				936D91ED17A44C3500AF8129 /* UIKit.framework in Frameworks */,
+				936D91EC17A44C3500AF8129 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		936D91BF17A44C3500AF8129 = {
+			isa = PBXGroup;
+			children = (
+				936D920317A44E7C00AF8129 /* Views & View Controllers */,
+				936D91D117A44C3500AF8129 /* GrapherApp */,
+				936D91F017A44C3500AF8129 /* GrapherAppTests */,
+				936D91CA17A44C3500AF8129 /* Frameworks */,
+				936D91C917A44C3500AF8129 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		936D91C917A44C3500AF8129 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				936D91C817A44C3500AF8129 /* GrapherApp.app */,
+				936D91E917A44C3500AF8129 /* GrapherAppTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		936D91CA17A44C3500AF8129 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				936D91CB17A44C3500AF8129 /* Foundation.framework */,
+				936D91CD17A44C3500AF8129 /* CoreGraphics.framework */,
+				936D91CF17A44C3500AF8129 /* UIKit.framework */,
+				936D91EA17A44C3500AF8129 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		936D91D117A44C3500AF8129 /* GrapherApp */ = {
+			isa = PBXGroup;
+			children = (
+				936D91DD17A44C3500AF8129 /* Main.storyboard */,
+				936D91DA17A44C3500AF8129 /* GPxAppDelegate.h */,
+				936D91DB17A44C3500AF8129 /* GPxAppDelegate.m */,
+				936D91E317A44C3500AF8129 /* Images.xcassets */,
+				936D91D217A44C3500AF8129 /* Supporting Files */,
+			);
+			path = GrapherApp;
+			sourceTree = "<group>";
+		};
+		936D91D217A44C3500AF8129 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				936D91D317A44C3500AF8129 /* GrapherApp-Info.plist */,
+				936D91D417A44C3500AF8129 /* InfoPlist.strings */,
+				936D91D717A44C3500AF8129 /* main.m */,
+				936D91D917A44C3500AF8129 /* GrapherApp-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		936D91F017A44C3500AF8129 /* GrapherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				936D91F617A44C3500AF8129 /* GrapherAppTests.m */,
+				936D91F117A44C3500AF8129 /* Supporting Files */,
+			);
+			path = GrapherAppTests;
+			sourceTree = "<group>";
+		};
+		936D91F117A44C3500AF8129 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				936D91F217A44C3500AF8129 /* GrapherAppTests-Info.plist */,
+				936D91F317A44C3500AF8129 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		936D920317A44E7C00AF8129 /* Views & View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				936D920017A44E6600AF8129 /* GSxPlot.h */,
+				936D920117A44E6600AF8129 /* GSxPlot.m */,
+				936D91E017A44C3500AF8129 /* GPxViewController.h */,
+				936D91E117A44C3500AF8129 /* GPxViewController.m */,
+				932C4E0217A6B2AD009EF125 /* GPxPlotViewController.h */,
+				932C4E0317A6B2AD009EF125 /* GPxPlotViewController.m */,
+			);
+			name = "Views & View Controllers";
+			path = GrapherApp;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		936D91C717A44C3500AF8129 /* GrapherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 936D91FA17A44C3500AF8129 /* Build configuration list for PBXNativeTarget "GrapherApp" */;
+			buildPhases = (
+				936D91C417A44C3500AF8129 /* Sources */,
+				936D91C517A44C3500AF8129 /* Frameworks */,
+				936D91C617A44C3500AF8129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GrapherApp;
+			productName = GrapherApp;
+			productReference = 936D91C817A44C3500AF8129 /* GrapherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		936D91E817A44C3500AF8129 /* GrapherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 936D91FD17A44C3500AF8129 /* Build configuration list for PBXNativeTarget "GrapherAppTests" */;
+			buildPhases = (
+				936D91E517A44C3500AF8129 /* Sources */,
+				936D91E617A44C3500AF8129 /* Frameworks */,
+				936D91E717A44C3500AF8129 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				936D91EF17A44C3500AF8129 /* PBXTargetDependency */,
+			);
+			name = GrapherAppTests;
+			productName = GrapherAppTests;
+			productReference = 936D91E917A44C3500AF8129 /* GrapherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		936D91C017A44C3500AF8129 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = GPx;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Aaron Augsburger";
+				TargetAttributes = {
+					936D91C717A44C3500AF8129 = {
+						DevelopmentTeam = 6F5977KA7G;
+					};
+					936D91E817A44C3500AF8129 = {
+						TestTargetID = 936D91C717A44C3500AF8129;
+					};
+				};
+			};
+			buildConfigurationList = 936D91C317A44C3500AF8129 /* Build configuration list for PBXProject "GrapherApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 936D91BF17A44C3500AF8129;
+			productRefGroup = 936D91C917A44C3500AF8129 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				936D91C717A44C3500AF8129 /* GrapherApp */,
+				936D91E817A44C3500AF8129 /* GrapherAppTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		936D91C617A44C3500AF8129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936D91E417A44C3500AF8129 /* Images.xcassets in Resources */,
+				936D91D617A44C3500AF8129 /* InfoPlist.strings in Resources */,
+				936D91DF17A44C3500AF8129 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936D91E717A44C3500AF8129 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936D91F517A44C3500AF8129 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		936D91C417A44C3500AF8129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936D91DC17A44C3500AF8129 /* GPxAppDelegate.m in Sources */,
+				932C4E0417A6B2AD009EF125 /* GPxPlotViewController.m in Sources */,
+				936D920217A44E6600AF8129 /* GSxPlot.m in Sources */,
+				936D91E217A44C3500AF8129 /* GPxViewController.m in Sources */,
+				936D91D817A44C3500AF8129 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		936D91E517A44C3500AF8129 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				936D91F717A44C3500AF8129 /* GrapherAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		936D91EF17A44C3500AF8129 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 936D91C717A44C3500AF8129 /* GrapherApp */;
+			targetProxy = 936D91EE17A44C3500AF8129 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		936D91D417A44C3500AF8129 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				936D91D517A44C3500AF8129 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		936D91DD17A44C3500AF8129 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				936D91DE17A44C3500AF8129 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		936D91F317A44C3500AF8129 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				936D91F417A44C3500AF8129 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		936D91F817A44C3500AF8129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		936D91F917A44C3500AF8129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		936D91FB17A44C3500AF8129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrapherApp/GrapherApp-Prefix.pch";
+				INFOPLIST_FILE = "GrapherApp/GrapherApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		936D91FC17A44C3500AF8129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrapherApp/GrapherApp-Prefix.pch";
+				INFOPLIST_FILE = "GrapherApp/GrapherApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		936D91FE17A44C3500AF8129 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GrapherApp.app/GrapherApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrapherApp/GrapherApp-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GrapherAppTests/GrapherAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		936D91FF17A44C3500AF8129 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GrapherApp.app/GrapherApp";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP3.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GrapherApp/GrapherApp-Prefix.pch";
+				INFOPLIST_FILE = "GrapherAppTests/GrapherAppTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		936D91C317A44C3500AF8129 /* Build configuration list for PBXProject "GrapherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936D91F817A44C3500AF8129 /* Debug */,
+				936D91F917A44C3500AF8129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		936D91FA17A44C3500AF8129 /* Build configuration list for PBXNativeTarget "GrapherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936D91FB17A44C3500AF8129 /* Debug */,
+				936D91FC17A44C3500AF8129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		936D91FD17A44C3500AF8129 /* Build configuration list for PBXNativeTarget "GrapherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				936D91FE17A44C3500AF8129 /* Debug */,
+				936D91FF17A44C3500AF8129 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 936D91C017A44C3500AF8129 /* Project object */;
+}
