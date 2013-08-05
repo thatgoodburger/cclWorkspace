@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>vsx2_2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>93562D8D17A371F8000E0556</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93665BF517ADA5A800CEA5F8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>93665C1417ADA5A800CEA5F8</key>
 		<dict>
 			<key>primary</key>
 			<true/>

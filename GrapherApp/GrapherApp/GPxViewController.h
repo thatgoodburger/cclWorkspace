@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#include "GSxPlot.h"
+
 #include "GPxPlotViewController.h"
 
 @interface GPxViewController : UIViewController

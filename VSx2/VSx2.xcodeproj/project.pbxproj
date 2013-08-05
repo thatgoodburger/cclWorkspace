@@ -66,6 +66,22 @@
 		93562D9917A371F8000E0556 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		93562D9B17A371F8000E0556 /* VSx2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSx2Tests.m; sourceTree = "<group>"; };
 		93562DA717A377B7000E0556 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		93665BF717ADA5A800CEA5F8 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		93665BFA17ADA5A800CEA5F8 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		93665BFB17ADA5A800CEA5F8 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		93665BFC17ADA5A800CEA5F8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		93665BFF17ADA5A800CEA5F8 /* vsx2_2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vsx2_2-Info.plist"; sourceTree = "<group>"; };
+		93665C0117ADA5A800CEA5F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93665C0317ADA5A800CEA5F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		93665C0517ADA5A800CEA5F8 /* vsx2_2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "vsx2_2-Prefix.pch"; sourceTree = "<group>"; };
+		93665C0717ADA5A800CEA5F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		93665C0917ADA5A800CEA5F8 /* VSx2AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VSx2AppDelegate.h; sourceTree = "<group>"; };
+		93665C0A17ADA5A800CEA5F8 /* VSx2AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VSx2AppDelegate.m; sourceTree = "<group>"; };
+		93665C0D17ADA5A800CEA5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		93665C0F17ADA5A800CEA5F8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		93665C1C17ADA5A800CEA5F8 /* vsx2_2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "vsx2_2Tests-Info.plist"; sourceTree = "<group>"; };
+		93665C1E17ADA5A800CEA5F8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		93665C2017ADA5A800CEA5F8 /* vsx2_2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vsx2_2Tests.m; sourceTree = "<group>"; };
 		936D91B517A40EBC00AF8129 /* NewScanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewScanViewController.h; sourceTree = "<group>"; };
 		936D91B617A40EBC00AF8129 /* NewScanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewScanViewController.m; sourceTree = "<group>"; };
 		936D91B817A40F7500AF8129 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
@@ -121,6 +137,8 @@
 				936D91B417A40E8600AF8129 /* Views */,
 				93562D7617A371F8000E0556 /* VSx2 */,
 				93562D9517A371F8000E0556 /* VSx2Tests */,
+				93665BFD17ADA5A800CEA5F8 /* vsx2_2 */,
+				93665C1A17ADA5A800CEA5F8 /* vsx2_2Tests */,
 				93562D6F17A371F8000E0556 /* Frameworks */,
 				93562D6E17A371F8000E0556 /* Products */,
 			);
@@ -143,6 +161,8 @@
 				93562D7217A371F8000E0556 /* CoreGraphics.framework */,
 				93562D7417A371F8000E0556 /* UIKit.framework */,
 				93562D8F17A371F8000E0556 /* XCTest.framework */,
+				93665BF717ADA5A800CEA5F8 /* Cocoa.framework */,
+				93665BF917ADA5A800CEA5F8 /* Other Frameworks */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -186,6 +206,58 @@
 			children = (
 				93562D9717A371F8000E0556 /* VSx2Tests-Info.plist */,
 				93562D9817A371F8000E0556 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93665BF917ADA5A800CEA5F8 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93665BFA17ADA5A800CEA5F8 /* AppKit.framework */,
+				93665BFB17ADA5A800CEA5F8 /* CoreData.framework */,
+				93665BFC17ADA5A800CEA5F8 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		93665BFD17ADA5A800CEA5F8 /* vsx2_2 */ = {
+			isa = PBXGroup;
+			children = (
+				93665C0917ADA5A800CEA5F8 /* VSx2AppDelegate.h */,
+				93665C0A17ADA5A800CEA5F8 /* VSx2AppDelegate.m */,
+				93665C0C17ADA5A800CEA5F8 /* MainMenu.xib */,
+				93665C0F17ADA5A800CEA5F8 /* Images.xcassets */,
+				93665BFE17ADA5A800CEA5F8 /* Supporting Files */,
+			);
+			path = vsx2_2;
+			sourceTree = "<group>";
+		};
+		93665BFE17ADA5A800CEA5F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93665BFF17ADA5A800CEA5F8 /* vsx2_2-Info.plist */,
+				93665C0017ADA5A800CEA5F8 /* InfoPlist.strings */,
+				93665C0317ADA5A800CEA5F8 /* main.m */,
+				93665C0517ADA5A800CEA5F8 /* vsx2_2-Prefix.pch */,
+				93665C0617ADA5A800CEA5F8 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93665C1A17ADA5A800CEA5F8 /* vsx2_2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				93665C2017ADA5A800CEA5F8 /* vsx2_2Tests.m */,
+				93665C1B17ADA5A800CEA5F8 /* Supporting Files */,
+			);
+			path = vsx2_2Tests;
+			sourceTree = "<group>";
+		};
+		93665C1B17ADA5A800CEA5F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				93665C1C17ADA5A800CEA5F8 /* vsx2_2Tests-Info.plist */,
+				93665C1D17ADA5A800CEA5F8 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -366,6 +438,38 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		93665C0017ADA5A800CEA5F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93665C0117ADA5A800CEA5F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		93665C0617ADA5A800CEA5F8 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93665C0717ADA5A800CEA5F8 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		93665C0C17ADA5A800CEA5F8 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93665C0D17ADA5A800CEA5F8 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		93665C1D17ADA5A800CEA5F8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93665C1E17ADA5A800CEA5F8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -385,6 +489,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -402,6 +507,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = /Users/Aaron/Downloads/iOS_Provision_Profile_Burger.mobileprovision;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -423,6 +529,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -433,6 +540,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PROVISIONING_PROFILE = /Users/Aaron/Downloads/iOS_Provision_Profile_Burger.mobileprovision;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
@@ -449,6 +557,7 @@
 				GCC_PREFIX_HEADER = "VSx2/VSx2-Prefix.pch";
 				INFOPLIST_FILE = "VSx2/VSx2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = iOS_Provision_Profile_Burger.mobileprovision;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -463,6 +572,7 @@
 				GCC_PREFIX_HEADER = "VSx2/VSx2-Prefix.pch";
 				INFOPLIST_FILE = "VSx2/VSx2-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = iOS_Provision_Profile_Burger.mobileprovision;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

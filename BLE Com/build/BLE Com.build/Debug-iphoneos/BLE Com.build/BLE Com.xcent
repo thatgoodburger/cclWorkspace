@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>6F5977KA7G.aaronaug.engin.umich.edu.BLE-Com</string>
+	<string>6F5977KA7G.com.thatgoodburger.BLE-Com</string>
 	<key>get-task-allow</key>
 	<true/>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>6F5977KA7G.aaronaug.engin.umich.edu.BLE-Com</string>
+		<string>6F5977KA7G.com.thatgoodburger.BLE-Com</string>
 	</array>
 </dict>
 </plist>

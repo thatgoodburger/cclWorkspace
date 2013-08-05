@@ -38,6 +38,16 @@
                ReferencedContainer = "container:VSx2.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "93665C1417ADA5A800CEA5F8"
+               BuildableName = "vsx2_2Tests.xctest"
+               BlueprintName = "vsx2_2Tests"
+               ReferencedContainer = "container:VSx2.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
