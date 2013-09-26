@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>96987720-11D3-471E-882A-9CFA23F21D4B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Arduino Controller</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>30409CA9-F64F-402D-8D71-2E01D09D8F6D</key>
+		<string>https://github.com/aaronaug/cclWorkspace.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Arduino Controller/Arduino Controller.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>30409CA9-F64F-402D-8D71-2E01D09D8F6D</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aaronaug/cclWorkspace.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>30409CA9-F64F-402D-8D71-2E01D09D8F6D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>30409CA9-F64F-402D-8D71-2E01D09D8F6D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cclWorkspace</string>
+		</dict>
+	</array>
+</dict>
+</plist>

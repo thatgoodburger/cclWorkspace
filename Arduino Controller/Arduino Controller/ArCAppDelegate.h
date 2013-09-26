@@ -17,35 +17,35 @@
 @interface ArCAppDelegate : NSObject <NSApplicationDelegate>
 {
 	int serialFileDescriptor;
-	speed_t baudRate;
-	
+	bool readThreadRunning;
 	struct termios gOriginalTTYAttrs;
 	NSTextStorage *storage;
-	
 }
 
 @property (assign) IBOutlet NSWindow *window;
 
 @property (weak) IBOutlet NSPopUpButton *deviceListBox;
+
 @property (weak) IBOutlet NSTextField *baudTextField;
 @property (weak) IBOutlet NSTextField *currentBaudRate;
 @property (weak) IBOutlet NSTextField *connectionStatus;
 @property (weak) IBOutlet NSTextField *connectedPort;
 @property (weak) IBOutlet NSTextField *readLabel;
-@property (weak) IBOutlet NSTextField *serialOutput;
+
+@property (unsafe_unretained) IBOutlet NSTextView *serialOutput;
 
 @property (weak) IBOutlet NSButton *scanButton;
-@property (weak) IBOutlet NSButton *resetButton;
 @property (weak) IBOutlet NSButton *openPortButton;
-@property (weak) IBOutlet NSButton *readPortButton;
 @property (weak) IBOutlet NSButton *closePortButton;
-@property (weak) IBOutlet NSButton *stopReadButton;
+@property (weak) IBOutlet NSButton *sendTextButton;
 
 - (IBAction)scanPorts:(id)sender;
-- (IBAction)resetDisplay:(id)sender;
 - (IBAction)openPort:(id)sender;
 - (IBAction)closePort:(id)sender;
-- (IBAction)startRead:(id)sender;
-- (IBAction)stopRead:(id)sender;
+- (IBAction)sendText:(id)sender;
+
+- (NSString *) openSerialPort: (NSString *)serialPortFile baud: (speed_t)baudRate;
+- (void) appendToIncomingText: (id)text;
+- (void) incomingTextUpdateThread: (NSThread *) parentThread;
 
 @end
