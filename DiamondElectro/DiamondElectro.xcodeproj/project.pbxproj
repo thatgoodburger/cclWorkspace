@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9306731417F5383C0098C8DB /* MainViewWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 9306731317F5383C0098C8DB /* MainViewWindow.m */; };
+		9319929E17F51E3A00CDFC36 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9319929D17F51E3A00CDFC36 /* IOKit.framework */; };
 		9322B85A17F4F93B00F20E9F /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9322B85917F4F93B00F20E9F /* GraphView.m */; };
 		9322B85C17F4F9BA00F20E9F /* DPV.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9322B85B17F4F9BA00F20E9F /* DPV.txt */; };
 		9379FDC317F50AA600FC5886 /* DeviceSettingsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379FDC217F50AA600FC5886 /* DeviceSettingsPanel.m */; };
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9306731217F5383C0098C8DB /* MainViewWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewWindow.h; path = Model/MainViewWindow.h; sourceTree = "<group>"; };
+		9306731317F5383C0098C8DB /* MainViewWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewWindow.m; path = Model/MainViewWindow.m; sourceTree = "<group>"; };
+		9319929D17F51E3A00CDFC36 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
 		9322B85817F4F93B00F20E9F /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		9322B85917F4F93B00F20E9F /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		9322B85B17F4F9BA00F20E9F /* DPV.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DPV.txt; sourceTree = "<group>"; };
@@ -68,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9319929E17F51E3A00CDFC36 /* IOKit.framework in Frameworks */,
 				937F7AC517F1FB660077A34F /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +93,8 @@
 		937F7AB817F1FB660077A34F = {
 			isa = PBXGroup;
 			children = (
+				9306731217F5383C0098C8DB /* MainViewWindow.h */,
+				9306731317F5383C0098C8DB /* MainViewWindow.m */,
 				9322B85817F4F93B00F20E9F /* GraphView.h */,
 				9322B85917F4F93B00F20E9F /* GraphView.m */,
 				937F7AFB17F23B960077A34F /* NewScanPanel.h */,
@@ -111,6 +119,7 @@
 		937F7AC317F1FB660077A34F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9319929D17F51E3A00CDFC36 /* IOKit.framework */,
 				937F7AC417F1FB660077A34F /* Cocoa.framework */,
 				937F7AE317F1FB670077A34F /* XCTest.framework */,
 				937F7AC617F1FB660077A34F /* Other Frameworks */,
@@ -277,6 +286,7 @@
 				937F7AD117F1FB660077A34F /* main.m in Sources */,
 				9379FDC317F50AA600FC5886 /* DeviceSettingsPanel.m in Sources */,
 				9322B85A17F4F93B00F20E9F /* GraphView.m in Sources */,
+				9306731417F5383C0098C8DB /* MainViewWindow.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +420,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiamondElectro/DiamondElectro-Prefix.pch";
 				INFOPLIST_FILE = "DiamondElectro/DiamondElectro-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -423,6 +434,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DiamondElectro/DiamondElectro-Prefix.pch";
 				INFOPLIST_FILE = "DiamondElectro/DiamondElectro-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

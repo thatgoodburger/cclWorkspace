@@ -623,10 +623,10 @@
                 </menuItem>
             </items>
         </menu>
-        <window title="DiamondElectro" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371">
+        <window title="DiamondElectro" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" animationBehavior="default" id="371" customClass="MainViewWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <rect key="contentRect" x="452" y="0.0" width="1200" height="700"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="1200" height="700"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -635,13 +635,26 @@
                         <rect key="frame" x="200" y="0.0" width="1000" height="700"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     </customView>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ggW-9g-Kh8">
+                        <rect key="frame" x="18" y="664" width="176" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Port: --" id="GIl-7u-9vK">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
                 </subviews>
             </view>
             <toolbar key="toolbar" implicitIdentifier="37240BEC-9DC0-4E3B-B386-FFED5173A718" autosavesConfiguration="NO" displayMode="iconAndLabel" sizeMode="regular" id="IO8-Pd-aoX">
                 <allowedToolbarItems>
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="zt0-WE-60n"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ZBV-C8-RN7"/>
-                    <toolbarItem implicitItemIdentifier="76FD394D-BC44-4D0A-83DC-FABCDC40A267" label="New Scan" paletteLabel="New Scan" tag="-1" id="Xwf-dW-ocl"/>
+                    <toolbarItem implicitItemIdentifier="76FD394D-BC44-4D0A-83DC-FABCDC40A267" label="New Scan" paletteLabel="New Scan" tag="-1" id="Xwf-dW-ocl">
+                        <connections>
+                            <action selector="openPort:" target="371" id="SIp-SM-bIV"/>
+                        </connections>
+                    </toolbarItem>
                     <toolbarItem implicitItemIdentifier="67D047DA-4034-4180-AEAC-F41A0C6EB0C7" label="Load Scan" paletteLabel="Load Scan" tag="-1" id="q3b-6S-fw9"/>
                     <toolbarItem implicitItemIdentifier="57105889-2F6B-4F1B-9DD5-38E5A8550D63" label="Export…" paletteLabel="Export…" tag="-1" id="xln-RC-9hd"/>
                     <toolbarItem implicitItemIdentifier="E44E5EDB-D640-4257-8C8F-06EA23167529" label="Device" paletteLabel="Device" tag="-1" id="tZi-6e-aC7">
@@ -669,12 +682,15 @@
                     <toolbarItem reference="Mwt-nM-1WW"/>
                 </defaultToolbarItems>
             </toolbar>
+            <connections>
+                <outlet property="portTextField" destination="ggW-9g-Kh8" id="g7e-SO-GSx"/>
+            </connections>
         </window>
         <window title="New Scan Settings" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="0ZK-No-DH3" customClass="NewScanPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" utility="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES"/>
             <rect key="contentRect" x="50" y="162" width="430" height="350"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1028"/>
             <view key="contentView" wantsLayer="YES" id="Jp8-h7-ASW">
                 <rect key="frame" x="0.0" y="0.0" width="430" height="350"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -1076,31 +1092,116 @@
         <window title="Device" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Jw3-mb-eyq" customClass="DeviceSettingsPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="1997" y="133" width="430" height="350"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
+            <rect key="contentRect" x="1997" y="133" width="225" height="184"/>
+            <rect key="screenRect" x="1680" y="-30" width="3840" height="1058"/>
             <view key="contentView" id="ujO-TL-r0m">
-                <rect key="frame" x="0.0" y="0.0" width="430" height="350"/>
+                <rect key="frame" x="0.0" y="0.0" width="225" height="184"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFJ-Gn-oes">
-                        <rect key="frame" x="20" y="313" width="91" height="17"/>
+                        <rect key="frame" x="70" y="157" width="84" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select Device:" id="4K9-fm-RpQ">
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Please Select" id="4K9-fm-RpQ">
                             <font key="font" metaFont="system"/>
                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                             <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
                     <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4p2-yF-7zQ">
-                        <rect key="frame" x="336" y="312" width="74" height="17"/>
+                        <rect key="frame" x="28" y="11" width="70" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="inline" title="rescan" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="UqF-Gj-W3O">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="smallSystemBold"/>
                         </buttonCell>
+                        <connections>
+                            <action selector="scanPorts:" target="Jw3-mb-eyq" id="8Dt-hV-Y27"/>
+                        </connections>
                     </button>
+                    <popUpButton verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bjG-S5-sYn">
+                        <rect key="frame" x="20" y="131" width="190" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <popUpButtonCell key="cell" type="inline" bezelStyle="inline" alignment="left" controlSize="small" lineBreakMode="truncatingTail" continuous="YES" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="TfF-yO-nKw">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                            <menu key="menu" title="OtherViews" id="W5C-Ll-17q">
+                                <items>
+                                    <menuItem title="please scan" id="vyD-yM-s3h"/>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                        <connections>
+                            <action selector="dropButtonPress:" target="Jw3-mb-eyq" id="cZ6-zp-aN8"/>
+                        </connections>
+                    </popUpButton>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ipc-dX-oxP">
+                        <rect key="frame" x="127" y="11" width="70" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="inline" title="save" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="I1q-cR-fhQ">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="doneButtonPress:" target="Jw3-mb-eyq" id="hgG-5g-FdB"/>
+                        </connections>
+                    </button>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nRo-Ac-uk3">
+                        <rect key="frame" x="66" y="86" width="136" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="9600" drawsBackground="YES" id="P4q-0D-bbB">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cad-8O-s3p">
+                        <rect key="frame" x="20" y="86" width="40" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Baud:" id="wru-v7-pHd">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QYG-O6-hlH">
+                        <rect key="frame" x="66" y="53" width="136" height="19"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" controlSize="small" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" continuous="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="-----" drawsBackground="YES" id="KlK-QX-bsZ">
+                            <font key="font" metaFont="smallSystem"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MED-Vj-wec">
+                        <rect key="frame" x="20" y="53" width="34" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Port:" id="91N-FH-vAY">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box autoresizesSubviews="NO" appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="baZ-P0-M3y">
+                        <rect key="frame" x="-3" y="117" width="449" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
+                    <box autoresizesSubviews="NO" appearanceType="aqua" verticalHuggingPriority="750" fixedFrame="YES" title="Box" boxType="separator" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="NCK-lC-X1h">
+                        <rect key="frame" x="-10" y="34" width="449" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
+                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <font key="titleFont" metaFont="system"/>
+                    </box>
                 </subviews>
             </view>
+            <connections>
+                <outlet property="baudTextField" destination="nRo-Ac-uk3" id="DnW-23-uOQ"/>
+                <outlet property="connectedPort" destination="QYG-O6-hlH" id="oiJ-xe-qCz"/>
+                <outlet property="deviceListBox" destination="bjG-S5-sYn" id="yoj-4a-g2J"/>
+            </connections>
         </window>
     </objects>
 </document>

@@ -8,7 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+NSMutableDictionary *data;
+
 int main(int argc, const char * argv[])
 {
+	data = [[NSMutableDictionary alloc] init];
+	
 	return NSApplicationMain(argc, argv);
 }

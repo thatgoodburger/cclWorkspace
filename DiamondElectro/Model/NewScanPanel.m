@@ -10,6 +10,8 @@
 
 @implementation NewScanPanel
 
+extern NSMutableDictionary *data;
+
 @synthesize initialETextField, highETextField, lowETextValue;
 
 - (IBAction)InitialPNSelect:(id)sender
@@ -20,6 +22,7 @@
 - (IBAction)SaveSettings:(id)sender
 {
 	
+
 }
 
 - (IBAction)ResetSettings:(id)sender

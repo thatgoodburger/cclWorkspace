@@ -8,6 +8,11 @@
 
 #import <Cocoa/Cocoa.h>
 
+
+
 @interface DiChemAppDelegate : NSObject <NSApplicationDelegate>
+{
+
+}
 
 @end

@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/Aaron/Developer/DiamondElectro/DiamondElectro/DiChemAppDelegate.m \
-  /Users/Aaron/Developer/DiamondElectro/DiamondElectro/DiChemAppDelegate.h
+  /Users/Aaron/Developer/cclWorkspace/DiamondElectro/DiamondElectro/DiChemAppDelegate.m \
+  /Users/Aaron/Developer/cclWorkspace/DiamondElectro/DiamondElectro/DiChemAppDelegate.h

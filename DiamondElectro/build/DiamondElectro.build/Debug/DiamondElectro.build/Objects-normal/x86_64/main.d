@@ -1,1 +1,2 @@
-dependencies: /Users/Aaron/Developer/DiamondElectro/DiamondElectro/main.m
+dependencies: \
+  /Users/Aaron/Developer/cclWorkspace/DiamondElectro/DiamondElectro/main.m
