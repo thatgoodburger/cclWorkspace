@@ -642,13 +642,13 @@
                     <toolbarItem implicitItemIdentifier="NSToolbarSpaceItem" id="zt0-WE-60n"/>
                     <toolbarItem implicitItemIdentifier="NSToolbarFlexibleSpaceItem" id="ZBV-C8-RN7"/>
                     <toolbarItem implicitItemIdentifier="76FD394D-BC44-4D0A-83DC-FABCDC40A267" label="New Scan" paletteLabel="New Scan" tag="-1" id="Xwf-dW-ocl"/>
-                    <toolbarItem implicitItemIdentifier="67D047DA-4034-4180-AEAC-F41A0C6EB0C7" label="Load Scan" paletteLabel="Load Scan" tag="-1" id="q3b-6S-fw9">
+                    <toolbarItem implicitItemIdentifier="67D047DA-4034-4180-AEAC-F41A0C6EB0C7" label="Load Scan" paletteLabel="Load Scan" tag="-1" id="q3b-6S-fw9"/>
+                    <toolbarItem implicitItemIdentifier="57105889-2F6B-4F1B-9DD5-38E5A8550D63" label="Export…" paletteLabel="Export…" tag="-1" id="xln-RC-9hd"/>
+                    <toolbarItem implicitItemIdentifier="E44E5EDB-D640-4257-8C8F-06EA23167529" label="Device" paletteLabel="Device" tag="-1" id="tZi-6e-aC7">
                         <connections>
-                            <action selector="makeKeyAndOrderFront:" target="Jw3-mb-eyq" id="Hcf-vn-ezJ"/>
+                            <action selector="makeKeyAndOrderFront:" target="Jw3-mb-eyq" id="GHd-6A-dOR"/>
                         </connections>
                     </toolbarItem>
-                    <toolbarItem implicitItemIdentifier="57105889-2F6B-4F1B-9DD5-38E5A8550D63" label="Export…" paletteLabel="Export…" tag="-1" id="xln-RC-9hd"/>
-                    <toolbarItem implicitItemIdentifier="E44E5EDB-D640-4257-8C8F-06EA23167529" label="Device" paletteLabel="Device" tag="-1" id="tZi-6e-aC7"/>
                     <toolbarItem implicitItemIdentifier="C747206E-47A8-48BD-9D57-187DC1BC6374" label="About" paletteLabel="About" tag="-1" id="Mwt-nM-1WW"/>
                     <toolbarItem implicitItemIdentifier="42356174-5778-4962-ACB9-2F499E840DBD" label="Settings" paletteLabel="Settings" tag="-1" id="c6I-ym-77h">
                         <connections>
@@ -1073,14 +1073,33 @@
             </connections>
         </window>
         <userDefaultsController representsSharedInstance="YES" id="6ic-pi-MCI"/>
-        <window title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Jw3-mb-eyq" customClass="NSPanel">
+        <window title="Device" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="Jw3-mb-eyq" customClass="DeviceSettingsPanel">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES" utility="YES" HUD="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="1997" y="133" width="326" height="350"/>
+            <rect key="contentRect" x="1997" y="133" width="430" height="350"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1050"/>
             <view key="contentView" id="ujO-TL-r0m">
-                <rect key="frame" x="0.0" y="0.0" width="326" height="350"/>
+                <rect key="frame" x="0.0" y="0.0" width="430" height="350"/>
                 <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rFJ-Gn-oes">
+                        <rect key="frame" x="20" y="313" width="91" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select Device:" id="4K9-fm-RpQ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4p2-yF-7zQ">
+                        <rect key="frame" x="336" y="312" width="74" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="inline" title="rescan" bezelStyle="inline" alignment="center" borderStyle="border" inset="2" id="UqF-Gj-W3O">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="smallSystemBold"/>
+                        </buttonCell>
+                    </button>
+                </subviews>
             </view>
         </window>
     </objects>

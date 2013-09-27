@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D0871CE7-C0FF-43E2-8F99-4986C1A8709D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DiamondElectro</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FC7A1E8D-1249-480C-A1F6-52117BCDFAFF</key>
+		<string>https://github.com/aaronaug/cclWorkspace.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>DiamondElectro/DiamondElectro.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FC7A1E8D-1249-480C-A1F6-52117BCDFAFF</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/aaronaug/cclWorkspace.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FC7A1E8D-1249-480C-A1F6-52117BCDFAFF</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FC7A1E8D-1249-480C-A1F6-52117BCDFAFF</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cclWorkspace</string>
+		</dict>
+	</array>
+</dict>
+</plist>

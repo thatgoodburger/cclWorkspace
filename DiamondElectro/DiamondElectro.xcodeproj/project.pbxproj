@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9322B85A17F4F93B00F20E9F /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9322B85917F4F93B00F20E9F /* GraphView.m */; };
 		9322B85C17F4F9BA00F20E9F /* DPV.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9322B85B17F4F9BA00F20E9F /* DPV.txt */; };
+		9379FDC317F50AA600FC5886 /* DeviceSettingsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9379FDC217F50AA600FC5886 /* DeviceSettingsPanel.m */; };
 		937F7AC517F1FB660077A34F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 937F7AC417F1FB660077A34F /* Cocoa.framework */; };
 		937F7ACF17F1FB660077A34F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 937F7ACD17F1FB660077A34F /* InfoPlist.strings */; };
 		937F7AD117F1FB660077A34F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 937F7AD017F1FB660077A34F /* main.m */; };
@@ -37,6 +38,8 @@
 		9322B85817F4F93B00F20E9F /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		9322B85917F4F93B00F20E9F /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		9322B85B17F4F9BA00F20E9F /* DPV.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = DPV.txt; sourceTree = "<group>"; };
+		9379FDC117F50AA500FC5886 /* DeviceSettingsPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DeviceSettingsPanel.h; path = Model/DeviceSettingsPanel.h; sourceTree = SOURCE_ROOT; };
+		9379FDC217F50AA600FC5886 /* DeviceSettingsPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DeviceSettingsPanel.m; path = Model/DeviceSettingsPanel.m; sourceTree = SOURCE_ROOT; };
 		937F7AC117F1FB660077A34F /* DiamondElectro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DiamondElectro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		937F7AC417F1FB660077A34F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		937F7AC717F1FB660077A34F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -131,6 +134,8 @@
 				937F7AD617F1FB660077A34F /* DiChemAppDelegate.h */,
 				937F7AD717F1FB660077A34F /* DiChemAppDelegate.m */,
 				937F7AD917F1FB660077A34F /* MainMenu.xib */,
+				9379FDC117F50AA500FC5886 /* DeviceSettingsPanel.h */,
+				9379FDC217F50AA600FC5886 /* DeviceSettingsPanel.m */,
 				937F7ADC17F1FB660077A34F /* Images.xcassets */,
 				937F7ACB17F1FB660077A34F /* Supporting Files */,
 			);
@@ -270,6 +275,7 @@
 				937F7AFD17F23B960077A34F /* NewScanPanel.m in Sources */,
 				937F7AD817F1FB660077A34F /* DiChemAppDelegate.m in Sources */,
 				937F7AD117F1FB660077A34F /* main.m in Sources */,
+				9379FDC317F50AA600FC5886 /* DeviceSettingsPanel.m in Sources */,
 				9322B85A17F4F93B00F20E9F /* GraphView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
