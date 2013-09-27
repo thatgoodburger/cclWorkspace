@@ -93,12 +93,7 @@
 		937F7AB817F1FB660077A34F = {
 			isa = PBXGroup;
 			children = (
-				9306731217F5383C0098C8DB /* MainViewWindow.h */,
-				9306731317F5383C0098C8DB /* MainViewWindow.m */,
-				9322B85817F4F93B00F20E9F /* GraphView.h */,
-				9322B85917F4F93B00F20E9F /* GraphView.m */,
-				937F7AFB17F23B960077A34F /* NewScanPanel.h */,
-				937F7AFC17F23B960077A34F /* NewScanPanel.m */,
+				93B937EB17F5CA4700573907 /* Custom Views */,
 				9322B85B17F4F9BA00F20E9F /* DPV.txt */,
 				937F7ACA17F1FB660077A34F /* DiamondElectro */,
 				937F7AE817F1FB670077A34F /* DiamondElectroTests */,
@@ -143,8 +138,6 @@
 				937F7AD617F1FB660077A34F /* DiChemAppDelegate.h */,
 				937F7AD717F1FB660077A34F /* DiChemAppDelegate.m */,
 				937F7AD917F1FB660077A34F /* MainMenu.xib */,
-				9379FDC117F50AA500FC5886 /* DeviceSettingsPanel.h */,
-				9379FDC217F50AA600FC5886 /* DeviceSettingsPanel.m */,
 				937F7ADC17F1FB660077A34F /* Images.xcassets */,
 				937F7ACB17F1FB660077A34F /* Supporting Files */,
 			);
@@ -179,6 +172,21 @@
 				937F7AEB17F1FB670077A34F /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		93B937EB17F5CA4700573907 /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				9306731217F5383C0098C8DB /* MainViewWindow.h */,
+				9306731317F5383C0098C8DB /* MainViewWindow.m */,
+				9322B85817F4F93B00F20E9F /* GraphView.h */,
+				9322B85917F4F93B00F20E9F /* GraphView.m */,
+				937F7AFB17F23B960077A34F /* NewScanPanel.h */,
+				937F7AFC17F23B960077A34F /* NewScanPanel.m */,
+				9379FDC117F50AA500FC5886 /* DeviceSettingsPanel.h */,
+				9379FDC217F50AA600FC5886 /* DeviceSettingsPanel.m */,
+			);
+			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
